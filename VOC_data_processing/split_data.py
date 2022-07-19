@@ -3,7 +3,7 @@ import random
 
 
 def main():
-    random.seed(0)  # 设置随机种子，保证随机结果可复现
+    random.seed(0)  # 设置随机种子，保证随机结果可复现 当设置相同的随机种子时，生成的随机数相同，可自行实验
 
     files_path = "./VOCtrainval/VOCdevkit/VOC2012/Annotations"
     assert os.path.exists(files_path), "path: '{}' does not exist.".format(files_path)
