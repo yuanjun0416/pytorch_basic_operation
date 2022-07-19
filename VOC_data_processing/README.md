@@ -8,3 +8,7 @@
 * 是对rename_data.py的补充
 * 由于网上爬虫的图片和标注过的信息经过rename_data.py后，annotation中的filename和path还未改变，需对其进行重写
 * rename_data_xml.py就是对<filename>和<path>的内容进行修改的
+
+## split_data.py
+* 是对rename_data_xml.py的补充
+* 由于在经过rename_data_xml.py处理之后，并没有划分训练集、验证集，本代码是将VOC（JPEGImages、Annotations）数据集划分到train.txt和val.txt，具体的默认比例是0.5，可以自行修改
