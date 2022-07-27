@@ -12,3 +12,6 @@
 ## split_data.py
 * 是对rename_data_xml.py的补充
 * 由于在经过rename_data_xml.py处理之后，并没有划分训练集、验证集，本代码是将VOC（JPEGImages、Annotations）数据集划分到train.txt和val.txt，具体的默认比例是0.5，可以自行修改
+
+## view_dataset_categories.py
+* 当pascal voc数据集不知道需要检测的目标种类是什么时，直接运行该代码，即可得到目标类别列表
